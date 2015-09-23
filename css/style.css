@@ -1,0 +1,14 @@
+body {
+	margin: 0; padding: 50px;
+	font: 14px;
+}
+
+
+label { 
+	width: 190px;
+}
+
+.rowElem { 
+	position: relative; 
+	clear: both;
+	min-height: 35px; }
