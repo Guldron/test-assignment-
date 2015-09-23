@@ -7,3 +7,12 @@ $(function () {
         }
     });
 });
+
+
+$(function () {
+ var editor = new wysihtml5.Editor("textarea", {
+    toolbar:        "toolbar",
+    parserRules:    wysihtml5ParserRules,
+    useLineBreaks:  false
+  });
+});

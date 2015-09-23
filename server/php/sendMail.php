@@ -22,7 +22,8 @@ $message .=	'<tr><td><strong>To:</strong> </td><td>'.$_POST['rec_name'].','.$_PO
 $message .=	'<tr><td><strong>Title:</strong></td><td>'.$_POST['subject'].'</td></tr>';
 $message .=	'<tr><td><strong>Message:</strong></td><td>'.$_POST['message'].'</td></tr>';
 $message .=	'</table></body>'; 
-$mail->Body = $message;                
+$mail->Body = $message;  
+echo $message;              
 foreach($attachments as  $value) { 			//upload files to email
 $mail->AddAttachment("uploads"."/".$value);
 };  

@@ -28,10 +28,15 @@
     	<label for="subject">Subject:</label>
         <input type="text" id="subject" name="subject">
     </div>
-    <div class="rowElem">
-		<p>Enter your message text:<Br>
-   		<textarea name="message" cols="40" rows="3"></textarea></p>
-   	</div>
+    
+  <div id="toolbar" style="display: none;">
+    <a data-wysihtml5-command="bold" title="CTRL+B">bold</a> |
+    <a data-wysihtml5-command="italic" title="CTRL+I">italic</a>
+    <a data-wysihtml5-action="change_view">switch to html view</a>
+  </div>
+  <textarea id="textarea" placeholder="Enter text ..." name="message"></textarea>
+
+
     <div class="rowElem">
     	<label for="name">Upload files:</label>
     	<input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
@@ -45,6 +50,8 @@
 <script src="js/jquery.ui.widget.js"></script>
 <script src="js/jquery.iframe-transport.js"></script>
 <script src="js/jquery.fileupload.js"></script>
+<script src="js/simple.js"></script>
+<script src="js/wysihtml5-0.4.0pre.js"></script>
 <script src="js/app.js"></script>
 </body> 
 </html>
